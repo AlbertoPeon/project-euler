@@ -8,7 +8,7 @@ calculate_sum_digit_factorials = lambda number: sum([factorial(int(digit)) for d
 
 digit_factorials = []
 # Exclude 1 and 2 per problem description
-# Assume upper limit is 10000
+# Assume upper limit is 100000
 for number in range(3, 100000):
     sum_factorials = calculate_sum_digit_factorials(number)
     if number == sum_factorials:
